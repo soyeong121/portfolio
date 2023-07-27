@@ -22,6 +22,10 @@ $(function () {
         e.preventDefault();
         $('#banner').addClass('block');
     });
+    $('#portfolio_img6').click(function (e) {
+        e.preventDefault();
+        $('#xd').addClass('block');
+    });
     $('.close').click(function (e) {
         e.preventDefault();
         $('.modal').removeClass('block');
@@ -282,6 +286,43 @@ $(function () {
         window.setTimeout(() => {
             slide5.style.left = 0;
             slide5.style.transition = duration5 + "ms";
+        });
+    }
+
+    // --------------------------------------------------------------------------
+    // xd popup
+
+    var slides6 = document.querySelector('#page-container6 > li'),
+        slide6 = document.querySelector('#page-container6'),
+        photoCount6 = slides6.length,
+        duration6 = 400,
+        photoIndex6 = 0;
+
+    // 슬라이드 버튼 클릭 이벤트
+    document.querySelector("#next6").addEventListener("click", nextSlideImage6);
+    document.querySelector("#prev6").addEventListener("click", prevSlideImage6);
+
+    // 다음 사진으로 슬라이드
+    function nextSlideImage6() {
+        photoIndex6++;
+        photoIndex6 %= photoCount6;
+        slide6.style.left = "-100%";
+        slide6.style.transition = duration6 + "ms";
+        window.setTimeout(() => {
+            slide6.appendChild(slide6.firstElementChild);
+            slide6.removeAttribute("style");
+        }, duration6);
+    }
+    // 이전 사진으로 슬라이드
+    function prevSlideImage6() {
+        photoIndex6--;
+        photoIndex6 %= photoCount6;
+        slide6.insertBefore(slide6.lastElementChild, slide6.firstChild);
+        slide6.style.left = "-100%";
+        slide6.style.transition = "0ms";
+        window.setTimeout(() => {
+            slide6.style.left = 0;
+            slide6.style.transition = duration6 + "ms";
         });
     }
 });
