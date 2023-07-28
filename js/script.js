@@ -3,31 +3,31 @@ $(function () {
     // kiosk mouseover시 이미지 변경
     let profile = $('#profile > button');
     profile.mouseover(function(){
-        $('#profile').css('backgroundImage','url(../images/kiosk2.png)');
+        $('#profile').css('backgroundImage','url(images/kiosk2.png)');
         $('#profile-button').css('fontWeight','600');
     });
     profile.mouseout(function(){
-        $('#profile').css('backgroundImage','url(../images/kiosk.png)');
+        $('#profile').css('backgroundImage','url(images/kiosk.png)');
         $('#profile-button').css('fontWeight','');
     });
 
     let skill = $('#skill > button');
     skill.mouseover(function(){
-        $('#skill').css('backgroundImage','url(../images/kiosk2.png)');
+        $('#skill').css('backgroundImage','url(images/kiosk2.png)');
         $('#skill-button').css('fontWeight','600');
     });
     skill.mouseout(function(){
-        $('#skill').css('backgroundImage','url(../images/kiosk.png)');
+        $('#skill').css('backgroundImage','url(images/kiosk.png)');
         $('#skill-button').css('fontWeight','');
     });
     
     let portfolio = $('#portfolio > button');
     portfolio.mouseover(function(){
-        $('#portfolio').css('backgroundImage','url(../images/kiosk2.png)');
+        $('#portfolio').css('backgroundImage','url(images/kiosk2.png)');
         $('#portfolio-button').css('fontWeight','600');
     });
     portfolio.mouseout(function(){
-        $('#portfolio').css('backgroundImage','url(../images/kiosk.png)');
+        $('#portfolio').css('backgroundImage','url(images/kiosk.png)');
         $('#portfolio-button').css('fontWeight','');
     });
 
