@@ -1,6 +1,3 @@
-/* * {
-    color: #0f0f0f;
-} */
 a {
     text-decoration: none;
     color: inherit;
@@ -25,12 +22,6 @@ body, html {
     background-position: top;
     background-repeat: no-repeat;
 }
-/* #top_button {
-    position: fixed;
-    bottom: 0;
-    right: 50px;
-    z-index: 11;
-} */
 #top-button {
     position: fixed;
     bottom: 0;
@@ -38,8 +29,6 @@ body, html {
     z-index: 11;
     width: 141px;
     height: 87px;
-
-    /* background: url('../images/top_button2.png') no-repeat; */
 }
 .nameplate {
     margin-top: 30px;
@@ -59,29 +48,23 @@ body, html {
 
 #page1 {
     width: 20%;
-    /* width: 1340px; */
     height: 100%;
     float: left;
     position: relative;
-    /* background-color: rgba(0, 0, 0, 0.3); */
-
-    /* scroll-snap-align: start; */
 }
 #contents_maine {
     position: absolute;
-    bottom: 150px;
-    left: 550px;
+    bottom: 130px;
+    left: 600px;
     width: 800px;
-    height: 600px;
-    /* background-color: aqua; */
+    height: 640px;
 }
-
+#gallery {
+    margin-bottom: 40px;
+}
 #gallery > img {
-    position: relative;
-    display: inline-block;
     width: 600px;
-    left: 50%;
-    transform: translateX(-50%);
+    padding-left: 93px;
 }
 #kiosk::after {
     content: "";
@@ -98,20 +81,9 @@ body, html {
     margin-left: 50px;
     position: relative;
 }
-/* #profile > a {
-    top: 54px;
-    left: 38px;
-    position: absolute;
-    display: block;
-    width: 120px;
-    text-align: center;
-    font-size: 23px;
-} */
 #profile-button{
-    top: 50px;
-    left: 38px;
-    position: absolute;
-    display: block;
+    margin-top: 50px;
+    margin-left: 36px;
     width: 120px;
     text-align: center;
     font-size: 23px;
@@ -126,20 +98,9 @@ body, html {
     margin-left: 50px;
     position: relative;
 }
-/* #skill > a {
-    top: 54px;
-    left: 38px;
-    position: absolute;
-    display: block;
-    width: 120px;
-    text-align: center;
-    font-size: 23px;
-} */
 #skill-button {
-    top: 50px;
-    left: 38px;
-    position: absolute;
-    display: block;
+    margin-top: 50px;
+    margin-left: 36px;
     width: 120px;
     text-align: center;
     font-size: 23px;
@@ -154,20 +115,9 @@ body, html {
     margin-left: 50px;
     position: relative;
 }
-/* #portfolio > a {
-    top: 54px;
-    left: 38px;
-    position: absolute;
-    display: block;
-    width: 120px;
-    text-align: center;
-    font-size: 23px;
-} */
 #portfolio-button {
-    top: 50px;
-    left: 38px;
-    position: absolute;
-    display: block;
+    margin-top: 50px;
+    margin-left: 36px;
     width: 120px;
     text-align: center;
     font-size: 23px;
@@ -180,10 +130,7 @@ body, html {
     width: 20%;
     height: 100%;
     float: left;
-    /* background-color: rgba(0, 0, 0, 0.2); */
     position: relative;
-
-    /* scroll-snap-align: start; */
 }
 #contents_profile {
     position: absolute;
@@ -192,7 +139,6 @@ body, html {
     transform: translate(-50%, -50%);
     width: 900px;
     height: 500px;
-    /* background-color: aqua; */
 }
 #contents_profile::after {
     content: "";
@@ -202,7 +148,6 @@ body, html {
 #photo {
     width: 50%;
     float: left;
-    /* border: 5px solid rebeccapurple; */
     position: relative;
 }
 #photo > img {
@@ -213,7 +158,6 @@ body, html {
 #profile_contents {
     width: 50%;
     float: left;
-    /* background-color: yellowgreen; */
 }
 #profile_contents > p {
     font-size: 23px;
@@ -223,7 +167,6 @@ body, html {
     margin-top: 150px;
 }
 #sns > a {
-    /* margin-left: 5px; */
     display: block;
     width: 50px;
     float: left;
@@ -237,8 +180,6 @@ body, html {
     clear: both;
 }
 #name > p {
-    /* top: 13px;
-    left: 34px; */
     top: 9px;
     left: 30px;
     font-size: 23px;
@@ -252,10 +193,7 @@ body, html {
     width: 20%;
     height: 100%;
     float: left;
-    /* background-color: rgba(0, 0, 0, 0.2); */
     position: relative;
-
-    /* scroll-snap-align: start; */
 }
 #contents_skill {
     position: absolute;
@@ -264,7 +202,6 @@ body, html {
     transform: translate(-50%, -50%);
     width: 1200px;
     height: 500px;
-    /* background-color: aqua; */
 }
 #contents_skill::after {
     content: "";
@@ -279,8 +216,6 @@ body, html {
     width: 300px;
     text-align: center;
     float: left;
-    /* background-color: red; */
-    /* position: relative; */
 }
 #skill1 > img:nth-child(1) {
     width: 110px;
@@ -294,7 +229,6 @@ body, html {
     width: 300px;
     text-align: center;
     float: left;
-    /* background-color: yellowgreen; */
     position: relative;
 }
 #skill2 > img:nth-child(1) {
@@ -309,7 +243,6 @@ body, html {
     width: 300px;
     text-align: center;
     float: left;
-    /* background-color: 0; */
     position: relative;
 }
 #skill3 > img:nth-child(1) {
@@ -324,8 +257,6 @@ body, html {
     width: 300px;
     text-align: center;
     float: left;
-    /* background-color: red; */
-    /* position: relative; */
 }
 #skill4 > img:nth-child(1) {
     width: 110px;
@@ -347,10 +278,7 @@ body, html {
     width: 20%;
     height: 100%;
     float: left;
-    /* background-color: rgba(0, 0, 0, 0.2); */
     position: relative;
-
-    /* scroll-snap-align: start; */
 }
 #notice {
     background-image: url('../images/notice2.png');
@@ -362,15 +290,6 @@ body, html {
     top: -3px;
     right: -160px;
 }
-/* #notice > a {
-    display: block;
-    width: 110px;
-    position: absolute;
-    top: 53px;
-    left: 18px;
-    font-size: 15px;
-    color: #efe8d8;
-} */
 #notice-button {
     width: 110px;
     position: absolute;
@@ -398,7 +317,6 @@ body, html {
     width: 33.33%;
     text-align: center;
     float: left;
-    /* background-color: red; */
     position: relative;
 }
 #portfolio1 > img {
