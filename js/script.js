@@ -33,6 +33,7 @@ $(function () {
 
     // --------------------------------------------------------------------------
     // 액자 클릭 시 내용에 맞게 팝업창 띄움
+    /*
     var is_clicked = false;
 
     $('#portfolio_img1').click(function (e) {
@@ -59,9 +60,31 @@ $(function () {
         e.preventDefault();
         $('#xd').addClass('block');
     });
-    $('.close').click(function (e) {
+     $('.close').click(function (e) {
         e.preventDefault();
         $('.modal').removeClass('block');
+    });
+    */
+
+    // close 누르거나 popup 외 클릭 시 팝업창 닫힘
+   $('.modal.show').css('display','none');
+    $(document).on("click",".btn-open", function (e){
+        var target = $(this).attr("href");
+        // $('.modal.show').css('display','block');
+        $(target).css('display','block');
+        $(target).addClass("show");
+    });
+    $(document).mouseup(function (e){
+        var LayerPopup = $(".modal");
+        if(LayerPopup.has(e.target).length === 0){
+            $('.modal.show').css('display','none');
+            // LayerPopup.removeClass("show");
+        }
+    });
+    $('.close').click(function(e){
+        e.preventDefault();
+        // $('.modal.show').removeClass('show');
+        $('.modal.show').css('display','none');
     });
 
     // --------------------------------------------------------------------------

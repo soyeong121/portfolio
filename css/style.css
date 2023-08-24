@@ -1,6 +1,3 @@
-/* * {
-    color: #0f0f0f;
-} */
 a {
     text-decoration: none;
     color: inherit;
@@ -25,12 +22,6 @@ body, html {
     background-position: top;
     background-repeat: no-repeat;
 }
-/* #top_button {
-    position: fixed;
-    bottom: 0;
-    right: 50px;
-    z-index: 11;
-} */
 #top-button {
     position: fixed;
     bottom: 0;
@@ -38,8 +29,6 @@ body, html {
     z-index: 11;
     width: 141px;
     height: 87px;
-
-    /* background: url('../images/top_button2.png') no-repeat; */
 }
 .nameplate {
     margin-top: 30px;
@@ -59,29 +48,23 @@ body, html {
 
 #page1 {
     width: 20%;
-    /* width: 1340px; */
     height: 100%;
     float: left;
     position: relative;
-    /* background-color: rgba(0, 0, 0, 0.3); */
-
-    /* scroll-snap-align: start; */
 }
 #contents_maine {
     position: absolute;
-    bottom: 150px;
-    left: 550px;
+    bottom: 130px;
+    left: 600px;
     width: 800px;
-    height: 600px;
-    /* background-color: aqua; */
+    height: 640px;
 }
-
+#gallery {
+    margin-bottom: 40px;
+}
 #gallery > img {
-    position: relative;
-    display: inline-block;
     width: 600px;
-    left: 50%;
-    transform: translateX(-50%);
+    padding-left: 93px;
 }
 #kiosk::after {
     content: "";
@@ -98,20 +81,9 @@ body, html {
     margin-left: 50px;
     position: relative;
 }
-/* #profile > a {
-    top: 54px;
-    left: 38px;
-    position: absolute;
-    display: block;
-    width: 120px;
-    text-align: center;
-    font-size: 23px;
-} */
 #profile-button{
-    top: 50px;
-    left: 38px;
-    position: absolute;
-    display: block;
+    margin-top: 50px;
+    margin-left: 36px;
     width: 120px;
     text-align: center;
     font-size: 23px;
@@ -126,20 +98,9 @@ body, html {
     margin-left: 50px;
     position: relative;
 }
-/* #skill > a {
-    top: 54px;
-    left: 38px;
-    position: absolute;
-    display: block;
-    width: 120px;
-    text-align: center;
-    font-size: 23px;
-} */
 #skill-button {
-    top: 50px;
-    left: 38px;
-    position: absolute;
-    display: block;
+    margin-top: 50px;
+    margin-left: 36px;
     width: 120px;
     text-align: center;
     font-size: 23px;
@@ -154,20 +115,9 @@ body, html {
     margin-left: 50px;
     position: relative;
 }
-/* #portfolio > a {
-    top: 54px;
-    left: 38px;
-    position: absolute;
-    display: block;
-    width: 120px;
-    text-align: center;
-    font-size: 23px;
-} */
 #portfolio-button {
-    top: 50px;
-    left: 38px;
-    position: absolute;
-    display: block;
+    margin-top: 50px;
+    margin-left: 36px;
     width: 120px;
     text-align: center;
     font-size: 23px;
@@ -180,10 +130,7 @@ body, html {
     width: 20%;
     height: 100%;
     float: left;
-    /* background-color: rgba(0, 0, 0, 0.2); */
     position: relative;
-
-    /* scroll-snap-align: start; */
 }
 #contents_profile {
     position: absolute;
@@ -192,7 +139,6 @@ body, html {
     transform: translate(-50%, -50%);
     width: 900px;
     height: 500px;
-    /* background-color: aqua; */
 }
 #contents_profile::after {
     content: "";
@@ -202,7 +148,6 @@ body, html {
 #photo {
     width: 50%;
     float: left;
-    /* border: 5px solid rebeccapurple; */
     position: relative;
 }
 #photo > img {
@@ -213,7 +158,6 @@ body, html {
 #profile_contents {
     width: 50%;
     float: left;
-    /* background-color: yellowgreen; */
 }
 #profile_contents > p {
     font-size: 23px;
@@ -223,7 +167,6 @@ body, html {
     margin-top: 150px;
 }
 #sns > a {
-    /* margin-left: 5px; */
     display: block;
     width: 50px;
     float: left;
@@ -237,8 +180,6 @@ body, html {
     clear: both;
 }
 #name > p {
-    /* top: 13px;
-    left: 34px; */
     top: 9px;
     left: 30px;
     font-size: 23px;
@@ -252,35 +193,29 @@ body, html {
     width: 20%;
     height: 100%;
     float: left;
-    /* background-color: rgba(0, 0, 0, 0.2); */
     position: relative;
-
-    /* scroll-snap-align: start; */
 }
 #contents_skill {
     position: absolute;
     bottom: 72px;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 900px;
+    width: 1200px;
     height: 500px;
-    /* background-color: aqua; */
 }
 #contents_skill::after {
     content: "";
     display: block;
     clear: both;
 }
-#skill1 > img, #skill2 > img, #skill3 > img {
+#skill1 > img, #skill2 > img, #skill3 > img, #skill4 > img {
     margin: auto;
     display: block;
 }
 #skill1 {
-    width: 33.33%;
+    width: 300px;
     text-align: center;
     float: left;
-    /* background-color: red; */
-    /* position: relative; */
 }
 #skill1 > img:nth-child(1) {
     width: 110px;
@@ -291,10 +226,9 @@ body, html {
     margin-top: 30px;
 }
 #skill2 {
-    width: 33.33%;
+    width: 300px;
     text-align: center;
     float: left;
-    /* background-color: yellowgreen; */
     position: relative;
 }
 #skill2 > img:nth-child(1) {
@@ -306,10 +240,9 @@ body, html {
     margin-top: 30px;
 }
 #skill3 {
-    width: 33.33%;
+    width: 300px;
     text-align: center;
     float: left;
-    /* background-color: 0; */
     position: relative;
 }
 #skill3 > img:nth-child(1) {
@@ -320,6 +253,23 @@ body, html {
     width: 150px;
     margin-top: 30px;
 }
+#skill4 {
+    width: 300px;
+    text-align: center;
+    float: left;
+}
+#skill4 > img:nth-child(1) {
+    width: 110px;
+    height: 123px;
+    object-fit: contain;
+    margin-top: 85px;
+}
+#skill4 > img:nth-child(2) {
+    width: 150px;
+    height: 214px;
+    object-fit: contain;
+    margin-top: 30px;
+}
 
 /* --------------------------------------------------- */
 /* page4 */
@@ -328,10 +278,7 @@ body, html {
     width: 20%;
     height: 100%;
     float: left;
-    /* background-color: rgba(0, 0, 0, 0.2); */
     position: relative;
-
-    /* scroll-snap-align: start; */
 }
 #notice {
     background-image: url('../images/notice2.png');
@@ -343,15 +290,6 @@ body, html {
     top: -3px;
     right: -160px;
 }
-/* #notice > a {
-    display: block;
-    width: 110px;
-    position: absolute;
-    top: 53px;
-    left: 18px;
-    font-size: 15px;
-    color: #efe8d8;
-} */
 #notice-button {
     width: 110px;
     position: absolute;
@@ -379,10 +317,12 @@ body, html {
     width: 33.33%;
     text-align: center;
     float: left;
-    /* background-color: red; */
     position: relative;
 }
-#portfolio1 > img {
+#portfolio1 > a {
+    display: block;
+}
+#portfolio1 > a > img {
     width: 230px;
     margin-top: 85px;
     cursor: pointer;
@@ -397,10 +337,12 @@ body, html {
     width: 33.33%;
     text-align: center;
     float: left;
-    /* background-color: yellowgreen; */
     position: relative;
 }
-#portfolio2 > img {
+#portfolio2 > a {
+    display: block;
+}
+#portfolio2 > a > img {
     width: 230px;
     margin-top: 85px;
     cursor: pointer;
@@ -418,7 +360,10 @@ body, html {
     /* background-color: gold; */
     position: relative;
 }
-#portfolio3 > img {
+#portfolio3 > a {
+    display: block;
+}
+#portfolio3 > a > img {
     width: 230px;
     margin-top: 85px;
     cursor: pointer;
@@ -437,19 +382,15 @@ body, html {
     width: 20%;
     height: 100%;
     float: left;
-    /* background-color: rgba(0, 0, 0, 0.3); */
     position: relative;
-
-    /* scroll-snap-align: start; */
 }
 #contents_portfolio2 {
     position: absolute;
     bottom: 72px;
     left: 40%;
     transform: translate(-50%, -50%);
-    width: 600px;
+    width: 930px;
     height: 500px;
-    /* background-color: aqua; */
 }
 #contents_portfolio2::after {
     content: "";
@@ -457,14 +398,15 @@ body, html {
     clear: both;
 }
 #portfolio4 {
-    width: 45%;
+    width: 270px;
     text-align: center;
     float: left;
-    /* background-color: red; */
     margin-right: 60px;
-    position: relative;
 }
-#portfolio4 > img {
+#portfolio4 > a {
+    display: block;
+}
+#portfolio4 > a > img {
     width: 230px;
     margin-top: 85px;
     cursor: pointer;
@@ -476,13 +418,15 @@ body, html {
     color: #efe8d8;
 }
 #portfolio5 {
-    width: 45%;
+    width: 270px;
     text-align: center;
     float: left;
-    /* background-color: yellowgreen; */
-    position: relative;
+    margin-right: 60px;
 }
-#portfolio5 > img {
+#portfolio5 > a {
+    display: block;
+}
+#portfolio5 > a > img {
     width: 230px;
     margin-top: 85px;
     cursor: pointer;
@@ -493,19 +437,38 @@ body, html {
     left: 38px;
     color: #efe8d8;
 }
+#portfolio6 {
+    width: 270px;
+    text-align: center;
+    float: left;
+}
+#portfolio6 > a {
+    display: block;
+}
+#portfolio6 > a > img {
+    width: 230px;
+    margin-top: 85px;
+    cursor: pointer;
+}
+#portfolio_name6 > p {
+    font-size: 23px;
+    top: 9px;
+    left: 31px;
+    color: #efe8d8;
+}
 
 /* --------------------------------------------------- */
 /* popup */
 
 .modal {
+    display: none;
     width: 100%;
     height: 100%;
     backdrop-filter: blur(20px) brightness(0.9);
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;
-    display: none;
 }
 .popup {
     position: absolute;
@@ -519,88 +482,152 @@ body, html {
 }
 .container {
     position: relative;
-    width: 100%;
+    width: 600px;
     height: 96%;
-    overflow: hidden;
-}
-.page-container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-.portfolio-page {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
     overflow: hidden;
 }
 .animated {
     -webkit-transition: left .3s ease-in;
     transition: left .3s ease-in;
 }
-.portfolio-page > a {
-    display: inline-block;
-    font-size: 23px;
-    font-weight: bold;
-    padding-left: 50px;
-    margin-top: 12px;
+
+/* ------------------------- */
+/* homepage */
+#page-container1 {
+    width: 300%;
+    position: relative;
+    left: 0;
 }
-.portfolio-page > img:nth-child(1) {
+#page-container1::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#page-container1 > li {
+    width: 33.3%;
+    float: left;
+}
+#page-container1 > li::after{content: ""; display: block; clear: both;}
+#page-container1 > li > img {
     width: 600px;
     height: 400px;
     object-fit: cover;
+    display: block;
 }
+#page-container1 p:nth-child(2) {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 40px;
+    margin-top: 15px;
+    float: left;
+    padding-left: 30px;
+}
+#page-container1 p:nth-child(4) {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    padding-left: 30px;
+    clear: both;
+}
+.short_cut {
+    background-color: #633400;
+    border-radius: 50px;
+    width: 140px;
+    height: 30px;
+    float: left;
+    margin: 20px 0 20px 30px;
+}
+.short_cut > a {
+    font-size: 22px;
+    color: #efe8d8;
+    line-height: 30px;
+    float: left;
+    display: block;
+    margin-left: 20px;
+}
+.short_cut > img {
+    width: 20px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
 /* ------------------------- */
-/* .portfolio-page2 img */
-.portfolio-page2 > img:nth-child(2) {
-    width: 228px;
-    height: 232px;
+/* page-container2 */
+#page-container2 {
+    width: 500%;
+    position: relative;
+    left: 0;
+}
+#page-container2::after { content: ""; display: block; clear: both; }
+#page-container2 > li {
+    width: 20%;
+    float: left;
+}
+#page-container2 > li > img {
+    width: 600px;
+    height: 100%;
     object-fit: cover;
+}
+#image-list {
+    height: 320px;
+    float: left;
+    position: relative;
+}
+#image-list > li:nth-child(1) {
+    width: 228px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#image-list > li:nth-child(2) {
+    width: 310px;
+    /* height: 120px; */
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#image-list > li:nth-child(3) {
+    width: 228px;
+    float: left;
     position: absolute;
-    top: 470px;
+    top: 70px;
     left: 20px;
 }
-.portfolio-page2 > img:nth-child(3) {
-    width: 310px;
-    height: 150px;
+#image-list > li:nth-child(3) > img {
+    width: 100%;
+    height: 232px;
     object-fit: cover;
+}
+#image-list > li:nth-child(4) {
+    width: 310px;
+    float: left;
     position: absolute;
-    top: 550px;
+    top: 150px;
     left: 270px;
 }
-/* ------------------------- */
-/* .portfolio-page1,.portfolio-page4,.portfolio-page5 간단설명 */
-.portfolio-page1 > p,.portfolio-page4 > p,.portfolio-page5 > p {
-    font-size: 20px;
-    margin-top: 5px;
-    padding-left: 50px;
+#image-list > li:nth-child(4) > img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
 }
-/* ------------------------- */
-/* .portfolio-page2 branding name */
-.portfolio-page2 > p {
-    font-size: 30px;
-    margin-top: 10px;
-    margin-left: 20px;
-    line-height: 40px;
-    float: left;
-    width: 228px;
-    text-align: center;
-    background-color: rgb(0,0,0,0.05);
-    border-radius: 5px;
-}
+#imga-list::after { content: ""; display: block; clear: both; }
+
 /* ------------------------- */
 /* branding1 */
 #branding1 {
-    position: absolute;
-    top: 415px;
-    left: 270px;
     width: 290px;
     height: 100px;
     padding: 10px;
     border-radius: 10px;
     background-color: rgb(0,0,0,0.05);
 }
+#branding1::after { content: ""; display: block; clear: both; }
 #branding1 > li:nth-child(1) {
     background-color: #f5c81e;
     border-radius: 50%;
@@ -626,16 +653,13 @@ body, html {
 #branding1 > li:nth-child(5) {
     font-size: 18px;
     float: left;
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
     width: 286px;
     line-height: 1.3;
 }
 /* brandin2 */
 #branding2 {
-    position: absolute;
-    top: 415px;
-    left: 270px;
     width: 290px;
     height: 100px;
     padding: 10px;
@@ -667,16 +691,13 @@ body, html {
 #branding2 > li:nth-child(5) {
     font-size: 18px;
     float: left;
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
     width: 286px;
     line-height: 1.3;
 }
 /* brandin3 */
 #branding3 {
-    position: absolute;
-    top: 415px;
-    left: 270px;
     width: 290px;
     height: 100px;
     padding: 10px;
@@ -708,16 +729,13 @@ body, html {
 #branding3 > li:nth-child(5) {
     font-size: 18px;
     float: left;
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
     width: 286px;
     line-height: 1.3;
 }
 /* brandin4 */
 #branding4 {
-    position: absolute;
-    top: 415px;
-    left: 270px;
     width: 290px;
     height: 100px;
     padding: 10px;
@@ -749,69 +767,88 @@ body, html {
 #branding4 > li:nth-child(5) {
     font-size: 18px;
     float: left;
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
     width: 286px;
     line-height: 1.3;
 }
 /* brandin5 */
 #branding-text {
-    position: absolute;
-    top: 460px;
-    left: 250px;
     font-size: 18px;
-    float: left;
-    width: 310px;
-    line-height: 32px;
+    text-align: center;
     border-radius: 10px;
     background-color: rgb(0,0,0,0.05);
     line-height: 1.3;
+    padding-top: 30px;
+    height: 80px;
 }
 /* ------------------------- */
 /* portfolio-page3 popup */
 /* .portfolio-page3 img */
-.portfolio-page3 > img:nth-child(2) {
-    width: 140px;
-    height: 280px;
-    object-fit: contain;
-    position: absolute;
-    top: 420px;
-    left: 20px;
+#page-container3 {
+    width: 400%;
+    position: relative;
+    left: 0;
+}
+#page-container3::after{ content: ""; display: block; clear: both;}
+#page-container3 > li {
+    width: 25%;
     float: left;
 }
-.portfolio-page3 > img:nth-child(3), .portfolio-page3 > img:nth-child(4) {
-    width: 200px;
-    height: 160px;
+#page-container3 > li > img {
+    width: 600px;
+    height: 400px;
     object-fit: cover;
-    position: absolute;
-    top: 540px;
+}
+.package-list {
+    width: 100%;
+    height: 320px;
     float: left;
+    position: relative;
 }
-.portfolio-page3 > img:nth-child(3) {
-    left: 170px;
-}
-.portfolio-page3 > img:nth-child(4) {
-    left: 380px;
-}
-#package1-text {
-    position: absolute;
-    top: 470px;
-    left: 100px;
-}
-#package1-text > li {
+.package-list > li:nth-child(1) {
+    width: 310px;
+    height: 40px;
     float: left;
+    margin-top: 20px;
+    margin-left: 20px;
 }
-#package1-text::after {
-    content: "";
-    display: block;
-    clear: both;
+.package-list > li:nth-child(2) {
+    width: 100%;
+    position: absolute;
+    font-size: 18px;
+    top: 70px;
+    left: 20px;
 }
+.package-list > li:nth-child(3) {
+    width: 268px;
+    float: left;
+    position: absolute;
+    top: 130px;
+    left: 20px;
+}
+.package-list > li:nth-child(3) > img {
+    width: 100%;
+    height: 172px;
+    object-fit: cover;
+}
+.package-list > li:nth-child(4) {
+    width: 268px;
+    float: left;
+    position: absolute;
+    top: 130px;
+    left: 310px;
+}
+.package-list > li:nth-child(4) > img {
+    width: 100%;
+    height: 172px;
+    object-fit: cover;
+}
+.package-list::after { content: ""; display: block; clear: both; }
+
 /* ------------------------- */
 /* package1 */
 #package1 {
-    position: absolute;
-    top: 425px;
-    left: 170px;
     width: 400px;
 }
 #package1 > li:nth-child(1) {
@@ -845,9 +882,6 @@ body, html {
 }
 /* package2 */
 #package2 {
-    position: absolute;
-    top: 425px;
-    left: 170px;
     width: 400px;
 }
 #package2 > li:nth-child(1) {
@@ -872,25 +906,7 @@ body, html {
     margin-left: 12px;
 }
 /* package3 */
-#package3-side-img {
-    width: 270px;
-    height: 170px;
-    object-fit: cover;
-    position: absolute;
-    top: 530px;
-    left: 20px;
-    float: left;
-}
-#package3-side-img2 {
-    width: 270px;
-    height: 170px;
-    top: 530px;
-    left: 310px;
-}
 #package3 {
-    position: absolute;
-    top: 425px;
-    left: 20px;
     width: 400px;
 }
 #package3 > li:nth-child(1) {
@@ -914,30 +930,8 @@ body, html {
     padding-top: 8px;
     margin-left: 12px;
 }
-#package3-text {
-    left: 20px;
-    width: 560px;
-}
 /* package4 */
-#package4-side-img {
-    width: 270px;
-    height: 170px;
-    object-fit: cover;
-    position: absolute;
-    top: 530px;
-    left: 20px;
-    float: left;
-}
-#package4-side-img2 {
-    width: 270px;
-    height: 170px;
-    top: 530px;
-    left: 310px;
-}
 #package4 {
-    position: absolute;
-    top: 425px;
-    left: 20px;
     width: 400px;
 }
 #package4 > li:nth-child(1) {
@@ -961,10 +955,89 @@ body, html {
     padding-top: 8px;
     margin-left: 12px;
 }
-#package4-text {
-    left: 20px;
-    width: 560px;
+/* ------------------------- */
+#page-container4 {
+    width: 900%;
+    position: relative;
+    left: 0;
 }
+#page-container4::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#page-container4 > li {
+    width: 11.11%;
+    float: left;
+}
+#page-container4 img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+#page-container4 p {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 20px;
+    padding-left: 30px;
+}
+/* ------------------------- */
+#page-container5 {
+    width: 900%;
+    position: relative;
+    left: 0;
+}
+#page-container5::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#page-container5 > li {
+    width: 11.11%;
+    float: left;
+}
+#page-container5 img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+#page-container5 p {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
+/* ------------------------- */
+#page-container6 {
+    width: 900%;
+    position: relative;
+    left: 0;
+}
+#page-container6::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#page-container6 > li {
+    width: 11.11%;
+    float: left;
+}
+#page-container6 > li > img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+#page-container6 p {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
 /* ------------------------- */
 button {
     border: none;
@@ -991,7 +1064,7 @@ button {
     left: 10px;
 
     background: url('../images/prev.png') no-repeat;
-    background-position: left;
+    background-position: 6px;
 }
 .next {
     position: absolute;
@@ -1001,18 +1074,17 @@ button {
     right: 10px;
 
     background: url('../images/next.png') no-repeat;
-    background-position: right;
+    background-position: 7px;
 }
 .prev, .next {
-    opacity: 0.6;
-    transition-duration: 100ms;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.8;
 }
 .prev:hover, .next:hover {
     opacity: 1;
-    border-radius: 50%;
-    background-color: #efe8d8;
-    width: 35px;
-    height: 35px;
 }
 .block {
     display: block !important;
